@@ -37,7 +37,7 @@ $('<button>').attr('id','clear').text('Clear').attr('class','panelengine').appen
 $('<hr />').appendTo('#panel');
 function grouprad() { radgrp++; return false; } 
 function makeoption() { selectnum++; $('<option>').attr('value','option'+selectnum).text('option'+selectnum).appendTo('#select'+dropnum); return false; }
-$('#input').click( function() { inputnum++; $('<input type="input">').attr('id','input'+inputnum).attr('placeholder','input'+inputnum).appendTo('#form'+formnum); return false;  });
+$('#input').click( function() { inputnum++; $('<input type="text">').attr('id','input'+inputnum).attr('placeholder','input'+inputnum).appendTo('#form'+formnum); return false;  });
 $('#textarea').click( function() { txnum++; $('<textarea>').attr('id','textarea'+txnum).attr('placeholder','text'+txnum+' to be entered').appendTo('#form'+formnum); return false; });
 $('#radio').click( function() { radnum++; $('<label>').text('radio'+radnum).append( $('<input type="radio">').attr('id','grp'+radgrp).attr('value','radio'+radnum)).appendTo('#form'+formnum); return false; });
 $('#checkbox').click( function() { ckboxnum++; $('<label>').text(' ck'+ckboxnum+' ').append( $('<input type="checkbox">').attr('id','ck'+ckboxnum) ).appendTo('#form'+formnum); return false; });
