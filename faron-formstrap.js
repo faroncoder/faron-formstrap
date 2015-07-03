@@ -35,7 +35,7 @@ $('<button>').attr('id', 'button').text('Submit').attr('class', 'panelengine').a
 $('<button>').attr('id', 'clear').text('Clear').attr('class', 'panelengine').appendTo(
   '#panel');
 /* $('.panelengine').each(function() {
-	$(this).after( $(document.createElement('br')) );
+  $(this).after( $(document.createElement('br')) );
 }); */
 $('<hr />').appendTo('#panel');
 
@@ -71,9 +71,8 @@ $('#radio').click(function () {
 });
 $('#checkbox').click(function () {
   ckboxnum++;
-  $('<label>').text(' ck' + ckboxnum + ' ').append($(
-    '<input type="checkbox">').attr('id', 'ck' + ckboxnum)).appendTo('#form' +
-    formnum);
+  $('<label>').text(' ck' + ckboxnum + ' ').append($('<input type="checkbox">')
+    .attr('id', 'ck' + ckboxnum)).appendTo('#form' + formnum);
   return false;
 });
 $('#password').click(function () {
